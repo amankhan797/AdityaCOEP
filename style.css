@@ -1,6 +1,7 @@
-*{
-    font-family: 'Nunito', sans-serif;;
+* {
+    font-family: 'Nunito', sans-serif;
 }
+
 #body {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     background-color: #F3EEEE;
     justify-content: center;
 }
+
 .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -92,6 +94,7 @@
     font-size: 1.1rem;
     font-weight: 600;
 }
+
 .container {
     padding: 0;
     margin: 0;
@@ -114,14 +117,6 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-}
-
-@media (width <=620px) {
-    .banner {
-        text-align: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
 }
 
 /* @keyframes morph {
@@ -148,7 +143,11 @@
     height: 190px;
     border-radius: 50%;
     object-fit: cover;
-    /* animation: morph 4s linear infinite; */
+}
+#utube-subscnt{
+    display: flex; 
+    align-items:start; 
+    justify-content: space-between;
 }
 
 #bn54 {
@@ -237,20 +236,23 @@
     border-radius: 20px;
 }
 
-.course{
+.course {
     width: 100%;
     padding: 20px;
     margin-top: 30px;
     background-color: rgba(135, 117, 225, 0.60);
     border-radius: 15px;
 }
+
 @keyframes underlineColorChange {
     0% {
         border-color: #684fe2;
     }
-    50%{
+
+    50% {
         border-color: #593ceb
     }
+
     100% {
         border-color: #6f57e6;
     }
@@ -280,12 +282,6 @@
 }
 
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 0px;
-    }
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -294,27 +290,34 @@
     text-align: center;
     color: white;
 }
+
 .footer p {
     margin-bottom: 0;
 }
+
 .social-icons {
     margin-bottom: 10px;
 }
+
 .social-icons a {
     font-size: 2rem;
     color: white;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
+
 .social-icons .fa-facebook:hover {
     color: #4267B2;
 }
+
 .social-icons .fa-twitter:hover {
     color: #1DA1F2;
 }
+
 .social-icons .fa-linkedin:hover {
     color: #0A66C2;
 }
+
 .social-icons .fa-instagram:hover {
     font-size: 2rem;
     color: white;
@@ -322,18 +325,77 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
 .social-icons .fa-youtube:hover {
     color: #FF0000;
 }
+
 .social-icons .fa-whatsapp:hover {
     color: #25D366;
 }
+
 .social-icons .fa-telegram:hover {
     color: #008888;
 }
+
 .center-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .banner-grp {
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+        text-align: start;
+        margin: 110px 0 0 0;
+    }
+    #psubstext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #substext{
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .banner-grp img {
+        -webkit-user-drag: none;
+        border: 2px #130613 solid;
+        margin-top: -180px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+    #utube-subscnt{
+        display: grid; 
+        align-items:center; 
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    #bn54 {
+        width: 100vw;
+        height: 40px;
+        margin-left: 0px;
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        opacity: 1;
+        background-color: #ff1e1e;
+    }
+    
+
 }
